@@ -3,6 +3,9 @@
     $filetype = $_FILES['file']['type'];
     $filetmp = $_FILES['file']['tmp_name'];
     $filesize = $_FILES['file']['size'];
+    $route = "./img/$filename";
+
+    move_uploaded_file($filetmp, $route);
 
     echo "El nombre del archivo es $filename <br>";
     echo "El tipo de archivo es $filetype <br>";
