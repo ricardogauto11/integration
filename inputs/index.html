@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+    <form action="./server.php" method="post" enctype="multipart/form-data">
+        <label for="simple">Input simple</label>
+        <input type="text" name="simple" id="simple">
+
+        <!-- Arreglo -->
+        <label for="people">Personas</label>
+        <input type="text" name="people[]">
+        <input type="text" name="people[]">
+        <input type="text" name="people[]">
+
+        <!-- Arreglo asociativo -->
+        <label for="person">Name:</label>
+        <input type="text" name="person[name]">
+
+        <label for="email">Email:</label>
+        <input type="email" name="person[email]">
+
+        <label for="age">Age:</label>
+        <input type="number" name="person[age]">
+
+        <!-- Checkbox -->
+        Check1
+        <input type="checkbox" name="check1">
+        Check2
+        <input type="checkbox" name="check2">
+        Check3
+        <input type="checkbox" name="check3">
+
+        <!-- Radios -->
+        <label for="arg">Argentina</label>
+        <input type="radio" name="country" value="Argentina" id="arg">
+
+        <label for="mex">Mexico</label>
+        <input type="radio" name="country" value="Mexico" id="mex">
+
+        <label for="bra">Brasil</label>
+        <input type="radio" name="country" value="Brasil" id="bra">
+
+        <!-- Multiples archivos -->
+        <label for="gallery">Gallery</label>
+        <input type="file" name="gallery[]" id="gallery" multiple>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
