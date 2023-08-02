@@ -25,7 +25,7 @@
             <span>Nombre: <?= $s_first_name ?></span>
             <span>Apellido: <?= $s_last_name ?></span>
             <span>Username sin numeros: <?= $s_username ?></span>
-            <span>Email: <?= $email ?></span>
+            <span>Email: <?= $s_email ?></span>
             <span>Age: <?= $s_age ?></span>
         </article>
     </section>
