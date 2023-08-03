@@ -13,7 +13,7 @@ function sendMail($name, $email, $subject, $body, $html = false)
     $phpmailer->SMTPAuth = true;
     $phpmailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $phpmailer->Port = 465;
-    $phpmailer->Username = 'ricardogauto11@gmail.com';
+    $phpmailer->Username = 'user@example.com';
     $phpmailer->Password = 'tvlrumtxiwvuyza';
 
     // Recipients
